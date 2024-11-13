@@ -1,35 +1,145 @@
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <style>
-            h2 {color:green;
-            font-size:15px;}
-            p1 { color:blue;}
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoorthi Resume</title>
+    <style>
+        /* Body to center and style the background */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+        }
+
+        /* Page container */
+        .page {
+            width: 100%;
+            max-width: 800px;
+            padding: 40px;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+
+        /* Header */
+        #myheader {
+            font-size: 36px;
+            color: #333333;
+            text-align: center;
+            margin: 0 0 20px;
+            font-weight: bold;
+        }
+
+        /* Subheadings and section titles */
+        .subheading {
+            color: green;
+            font-size: 15px;
+            margin: 20px 0 10px;
+            font-weight: bold;
+        }
+
+        /* Secondary text */
+        .second {
+            color: blue;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        /* Content styling */
+        .section {
+            margin-bottom: 20px;
+        }
+
+        /* Contact details */
+        .contact-details, .section-content {
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.6;
+        }
+
+        /* Links styling */
+        .section a {
+            color: #007acc;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .section a:hover {
+            text-decoration: underline;
+        }
+
+        /* List styling */
+        ul {
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Divider between sections */
+        .divider {
+            height: 1px;
+            background-color: #e5e5e5;
+            margin: 20px 0;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1 id="myheader">Spoorthi Kamidi</h1>
+        
+        <div class="contact-details">
+            <h2 class="subheading">Junior Frontend Developer</h2>
+            <p>6591 Curwen Ln, Frisco, TX<br>kspoorthi.1029@gmail.com<br>940-279-9539</p>
+        </div>
 
 
-        </style>
+        <article class="section">
+            <h2 class="subheading">Skills</h2>
+            <div class="section-content">
+                <p>HTML, CSS, JavaScript, Responsive Web Design</p>
+            </div>
+        </article>
 
-    </head>
-    
-    <body>
-        <h1 title="main heading" style ="font-size: 30px;">My Resume</h1>
-        <h2>Junior frontend developer</h2>
+        <article class="section">
+            <h2 class="subheading">Education</h2>
+            <div class="section-content">
+                <p class="second">TAMUCC, TX - Master's in CS</p>
+                <p>Aug 2019 - May 2021</p>
+            </div>
+        </article>
 
-        <p>6591 curwen Ln,<br>Frisco, TX<br>kspoorthi.1029@gmail.com<br>9402799539</p>
-        <h2>Skills</h2>
-        <p>HTML,CSS, JavaScript, Responsive web design</p>
-        <h2>Education</h2>
-        <pre>
-        Texas A&M University  - corpus christi, TX
-        Masters in computer science       Aug 2019 - May 2021
-        </pre>
-        <h2>Experience</h2>
-        <p1> Ever.ag, Dallas - Software Engineer</p1>
-        <p>Aug 2022 - Nov 2024 <br>Developed reactive, non-blocking APIs using Spring WebFlux to handle high-throughput, low-latency data requests, improving application responsiveness and scalability</p>
-        <p1> Costco Travel, Dallas - Java Developer</p1>
-        <p>Aug 2021 - Jul 2022  <br>•	Developed a Spring batch application for token generation to enhance fraud verification processes, improving security.</p>
-        <h2>Access to Internet</h2>
-        <p>Github, Linkedin</p>
+        <article class="section">
+            <h2 class="subheading">Experience</h2>
+            <div class="section-content">
+                <p class="second">Ever.ag, Dallas - Software Engineer</p>
+                <p>Aug 2022 - Nov 2024</p>
+                <ul>
+                    <li>Developed reactive, non-blocking APIs using Spring WebFlux to handle high-throughput, low-latency data requests, improving application responsiveness and scalability.</li>
+                </ul>
+                <p class="second">Costco Travel, Dallas - Java Developer</p>
+                <p>Aug 2021 - Jul 2022</p>
+                <ul>
+                    <li>Developed a Spring batch application for token generation to enhance fraud verification processes, improving security.</li>
+                </ul>
+            </div>
+        </article>
 
-    </body>
+
+        <article class="section">
+            <h2 class="subheading">Online Profiles</h2>
+            <div class="section-content">
+                <a href="https://github.com/SpoorthiK57" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/spoorthi-k0507/" target="_blank">LinkedIn</a>
+            </div>
+        </article>
+    </div>
+</body>
 </html>
