@@ -1,0 +1,178 @@
+/* Default visibility of sections */
+.section {
+    display: none;
+}
+#home:target,
+#projects:target,
+#articles:target,
+#contact:target {
+            display: block;
+        }
+
+        /* Default when no section is targeted (shows home by default) */
+        body:not(:has(:target)) #home {
+            display: block;
+        }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* unvisited link */
+  a.one:link, a.one:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  /* mouse over link */
+  a.one:hover {
+    color: hotpink;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a.one:active {
+    color: blue;
+    text-decoration: none;
+  }
+  a.tow:link {
+    color: red;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a.two:visited {
+    color: green;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a.two:hover {
+    color: hotpink;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a.two:active {
+    color: blue;
+    text-decoration: none;
+  }
+
+}
+header{
+    background-color: black;
+    color:white;
+}
+table{
+    border-collapse: collapse;
+   
+}
+p:hover {background-color: rgb(142, 138, 136);}
+fieldset{
+    border-radius: 50px;
+}
+#top{
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+}
+/*Floating Back-To-Top Button*/
+#myBtn {
+    position: fixed;
+    bottom: 10px;
+    float: right;
+    right: 18.5%;
+    left: 77.25%;
+    max-width: 30px;
+    width: 100%;
+    font-size: 12px;
+    border-color: rgba(85, 85, 85, 0.2);
+    background-color: rgb(100,100,100);
+    padding: .5px;
+    border-radius: 4px;
+
+}
+/* Default table styling for larger screens */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Media query for screens 600px wide or less */
+@media screen and (max-width: 600px) {
+
+  header {
+    padding: 20px;
+}
+
+/* Flexbox for horizontal alignment */
+nav {
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    flex-wrap: wrap; /* Allows links to wrap if necessary */
+}
+
+nav a.one {
+    margin: 5px; /* Adjust spacing between links for smaller screens */
+    text-align: center; /* Center-align individual links */
+}
+
+  /* Make the table stack vertically */
+  table {
+      display: block;
+  }
+
+  /* Make each table row stack vertically */
+  tr {
+      display: block;
+  }
+
+  /* Ensure individual cells take full width */
+  td {
+      display: block;
+      width: 100%; /* Take full width of parent */
+      margin-bottom: 15px; /* Add spacing between rows */
+  }
+
+  /* Adjust navigation links for small screens */
+  nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  nav a {
+      margin: 5px 0;
+  }
+}
+
+/* Optional: For better alignment on all screens */
+header, footer {
+  text-align: center;
+}
+
+/* Default styling for larger screens */
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav div {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Navigation link styling */
+a.one {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+a.one:hover {
+  color: hotpink;
+}
+
