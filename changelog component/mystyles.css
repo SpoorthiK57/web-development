@@ -36,12 +36,34 @@ body{
     padding: 12px;
     text-align: right;
     color:grey;
+    padding-right: 23px;
+    font-size: large;
 }
 .right1{
     padding: 12px;
     text-align: left;
     border-left:1px solid black;
+    font-size: large;
 }
 .button1{
     text-align: center;
+    
+.button2{
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: large;
+}
+
+}
+.dot{
+    height: 11px;
+    width: 11px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    left: -17px;
 }
