@@ -1,0 +1,136 @@
+body{
+    margin: auto;
+    width: 900px;
+    height: 537px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+.main{
+    margin: auto;
+    width: 330px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.input{
+    width: 330px;
+    height: 70px;
+    border: 1px solid black;
+    display: flex;
+
+}
+.date{
+    width: 230px;
+    height: 70px;
+    border: 1px solid black;
+    padding: 0px 0px 0px 0px;
+    font-size: x-large;
+    display: flex;
+
+}
+.icon{
+    width: 97px;
+    height: 70px;
+    border: 1px solid black;
+    display: flex;
+
+
+}
+button{
+    width:100px;
+}
+.keypad{
+    width: 330px;
+    height: 330px;
+    border: 1px solid black;
+
+}
+.top{
+    width: 330px;
+    height: 90px;
+    border: 1px solid black;
+
+}
+.month {
+    width: 330px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.month h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin: 11px;
+    position: relative; 
+}
+
+.month h5::before{
+    content: "\25B2"; 
+    font-size: 18px; 
+    display: inline-block;
+    transform: rotate(-90deg); 
+    margin: 0 10px; 
+    color: #333;
+
+}
+.month h5::after {
+    content: "\25B2"; 
+    font-size: 18px; 
+    display: inline-block;
+    transform: rotate(90deg); 
+    margin: 0 10px; 
+    color: #333; 
+}
+
+.week{
+    width: 330px;
+    height: 45px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+.grid-item1{
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+.bottom{
+    width: 330px;
+    height: 237px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+
+}
+.grid-item{
+  font-size: 22px;
+  text-align: center;
+  border:1px black solid;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=text] {
+    width:222px;
+
+
+}
+
+input::placeholder {
+    font: 22px sans-serif;
+}
+
